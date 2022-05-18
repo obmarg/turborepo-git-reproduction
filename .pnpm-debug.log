@@ -1,0 +1,59 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "private": true,
+      "workspaces": [
+        "apps/*",
+        "packages/*"
+      ],
+      "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+      },
+      "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-custom": "*",
+        "prettier": "^2.5.1",
+        "turbo": "latest"
+      }
+    },
+    "prefix": "/Users/graeme/src/turborepo-git-reproduction"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/graeme/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/graeme/src/turborepo-git-reproduction/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/graeme/src/turborepo-git-reproduction",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "eslint-config-custom is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/eslint-config-custom"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "eslint-config-custom",
+    "spec": {
+      "fetchSpec": "*",
+      "name": "eslint-config-custom",
+      "type": "range"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/eslint-config-custom: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/eslint-config-custom: Not Found - 404\n    at RetryOperation._fn (/Users/graeme/.asdf/installs/nodejs/16.12.0/.npm/lib/node_modules/pnpm/dist/pnpm.cjs:84259:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

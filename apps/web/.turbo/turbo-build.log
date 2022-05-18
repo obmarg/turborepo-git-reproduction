@@ -1,0 +1,25 @@
+[33mweb:build: [0mcache hit, replaying output [2m66e21296700320d4[0m
+[33mweb:build: [0m
+[33mweb:build: [0m> web@1.0.0 build /Users/graeme/src/turborepo-git-reproduction/apps/web
+[33mweb:build: [0m> next build
+[33mweb:build: [0m
+[33mweb:build: [0minfo  - Checking validity of types...
+[33mweb:build: [0merror - ESLint: Failed to load config "custom" to extend from. Referenced from: /Users/graeme/src/turborepo-git-reproduction/apps/web/.eslintrc.js
+[33mweb:build: [0minfo  - Creating an optimized production build...
+[33mweb:build: [0minfo  - Compiled successfully
+[33mweb:build: [0minfo  - Collecting page data...
+[33mweb:build: [0minfo  - Generating static pages (0/3)
+[33mweb:build: [0minfo  - Generating static pages (3/3)
+[33mweb:build: [0minfo  - Finalizing page optimization...
+[33mweb:build: [0m
+[33mweb:build: [0mPage                                       Size     First Load JS
+[33mweb:build: [0m┌ ○ /                                      304 B          73.1 kB
+[33mweb:build: [0m└ ○ /404                                   193 B            73 kB
+[33mweb:build: [0m+ First Load JS shared by all              72.8 kB
+[33mweb:build: [0m  ├ chunks/framework-55a3f082bd9fe668.js   42 kB
+[33mweb:build: [0m  ├ chunks/main-c3b9caa4f94d0170.js        28.6 kB
+[33mweb:build: [0m  ├ chunks/pages/_app-c3f8a4a7471151b8.js  1.37 kB
+[33mweb:build: [0m  └ chunks/webpack-fd82975a6094609f.js     727 B
+[33mweb:build: [0m
+[33mweb:build: [0m○  (Static)  automatically rendered as static HTML (uses no initial props)
+[33mweb:build: [0m
